@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Programa Usando Funciones</h1>
+
+
+<script >
+	// funcion para generar salto de Linea
+	function saltarLinea(){
+		document.write("<br>");
+	}
+	// funcion para generar impresión de pantalla con etiqueta h3
+	function imprimirResultado(frase){
+		saltarLinea();
+		document.write("<h3>"+frase+"</h3");
+	}
+	//declaración de variables
+	var nombre = "Maria";
+	var anho = 2020;
+	var nombre1 = "Julia";
+	// Uso de las funciones con las variables.
+	imprimirResultado("La edad de "+nombre+" es "+(anho-1995)+" años.");
+	imprimirResultado("La edad de "+nombre1+" es "+(anho-1999)+" años.");
+</script>
