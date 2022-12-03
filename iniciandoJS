@@ -1,0 +1,16 @@
+<h1>MI primer programa de HTML.!</h1>
+<h1>Bienvenido</h1>
+Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
+<br>
+<br>
+Sera estoy realmente un programa!?
+<meta charset="UTF-8">
+<h1>Usando JavaScript por primera vez</h1>
+<script>
+    alert("Este es un pop-up en JavaScript");
+</script>
+
+Esto está fuera de JavaScript...
+<script>
+	alert("Probando lo aprendido");
+</script>
