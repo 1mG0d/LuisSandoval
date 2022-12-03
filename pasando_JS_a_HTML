@@ -1,0 +1,8 @@
+<meta charset="utf -8">
+
+
+<script>	
+	document.write("La edad de Cristian es...<br>");
+	document.write("<br>");
+	document.write("<br>"+25);
+</script>
