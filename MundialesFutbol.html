@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA VERIFICACION DE MUNDIALES DE FUTBOL </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    let anho = parseInt(prompt("Ingrese el año  que sea saber los mundiales: "));
+    let inicioMundial=1930;
+    while(inicioMundial<=anho){
+        if(inicioMundial==1942||inicioMundial==1946)
+        {
+        alert("Este anho "+inicioMundial+" no hubo mundial de futbol por la segunda guerra mundial");
+        imprimir("Este anho "+inicioMundial+" no hubo mundial de futbol por la segunda guerra mundial");
+    }else
+    {
+        imprimir("Este anho" +inicioMundial+" si hubo mundial de futbol.");
+    }
+    inicioMundial+=4;
+    }
+</script>
