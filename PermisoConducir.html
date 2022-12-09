@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA VERIFICACION DE LICENCIA </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    let edad = parseInt(prompt("Ingrese su edad por favor: "));
+    let licencia=prompt("Posee usted licencia para conducir S o N: ");
+    licencia= licencia.toLowerCase();
+    if(licencia!="s"&&licencia!="n")
+    {
+        alert("Escribio un valor no valido para la licencia. ");
+        imprimir("Datos Errados");
+    }else
+    {
+        if(edad>17&&licencia=="s"){
+            imprimir("Usted puede manejar por todo el pais.")
+        }
+        else{
+            if(edad<18){
+                imprimir("Usted es menor de edad.")
+            }
+            else{
+                imprimir("Usted debe hacer el curso de conduccion para la licencia.")
+            }
+        }
+    }
+</script>
