@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    let pensado=prompt("Digame un numero: ");
+    imprimir(pensado);
+    if(numeroPensado==pensado)
+    {
+        alert("NUMERO CORRECTO");
+    }else
+    {
+        imprimir("FALLASTE");
+        imprimir("Yo pense el "+numeroPensado);
+    }
+</script>
