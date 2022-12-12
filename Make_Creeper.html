@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<h1 >Poster Creeper</h1>
+
+<canvas id="Creeper" width="600" height="400" >
+</canvas>
+<script>
+	var creeper = document.getElementById("Creeper");
+	var poster = creeper.getContext("2d");
+	//Funcion de prueba para crear ojo rojo o cualquier rectangulo
+	function ojos (x,y,ancho,alto){
+		poster.beginPath();
+		poster.fillStyle="red";
+		poster.fillRect(x,y,ancho,alto);
+	}
+	//cabeza
+	poster.fillStyle="darkGreen";
+	poster.fillRect(0,0,300,350);
+	// ojos
+	poster.beginPath();
+	poster.fillStyle="Black";
+	poster.fillRect(25,95,90,90);
+	poster.fillRect(185,95,90,90);
+	//nariz
+	poster.fillRect(115,185,70,100);
+	//Boca	
+	poster.fillRect(75,240,40,110);
+	poster.fillRect(185,240,40,110);
+
+	ojos(25,95,90,90);
+
+</script>
